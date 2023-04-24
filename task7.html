@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <form action="/action_page.php"></form>
+   <table style="width: 50%" border="1" bgcolor="grey">
+    <caption align="Center">Registration form</caption>
+  <tr>
+    <th width="60%"><label for="fname">Enter your First name:</label><br></th>
+    <td> 
+        
+  <input type="text" id="fname" name="fname" value="Enter your first name"><br>
+    </td>
+    
+  </tr>
+
+   <tr>
+    <th><label for="lname">Enter your last name:</label><br></th>
+    <td> 
+        
+  <input type="text" id="lname" name="lname" value="Enter your last name"><br>
+    </td>
+    
+  </tr>
+      <th><label for="psswd">Enter your Password:</label><br></th>
+    <td> 
+        
+  <input type="password" id="psswd" name="psswd" value=""><br>
+    </td>
+    
+  </tr>
+      <th><label for="repsswd">ReEnter your Password:</label><br></th>
+    <td> 
+        <input type="password" id="repsswd" name="repsswd" value=""><br>
+    </td>
+
+  </tr>
+  <th><label for="number">Enter your number:</label><br></th>
+    <td> 
+        
+  <input type="tel" id="number" name="number" value=""><br>
+    </td>
+    
+  </tr>
+    <th><label for="email">Enter your email:</label><br></th>
+    <td> 
+        
+  <input type="email" id="email" name="email" value=""><br>
+    </td>
+     </tr>
+    <tr>
+    <th><p>Select your gender:</p><br></th>
+      <td> 
+        <input type="radio" id="male" name="gender" value="male">
+         <label for="male">Male</label>
+         <input type="radio" id="female" name="gender" value="female">
+         <label for="female">Female</label><br>
+      </td>
+    </tr>
+    <tr>
+        <th><p>Select your hobby:</p><br></th>
+          <td> 
+            <input type="radio" id="1" name="hobby" value="hobby1">
+       <label for="hobby1">hobby1</label>
+       <input type="radio" id="2" name="hobby" value="hobby2">
+       <label for="hobby1">hobby2</label>
+      <input type="radio" id="3" name="hobby" value="hobby3">
+       <label for="hobby3">hobby3</label>
+          </td>
+        <tr>
+          <th>Enter your adress:</th>
+          <td><textarea placeholder="=Enter your text" rows="25" cols="75"></textarea></td>
+        </tr>
+        <tr>
+            <th>Enter your Dob</th>
+            <td align="left"><input type="date" name="dob" id="date"></td>
+        </tr>
+        <tr>
+            <th>Select your Country</th>
+            <td><select name="Country">
+                <option value="1">Nepal</option>
+                <option value="2">US</option>
+                <option value="3">India</option>
+            </select></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <th>Upload your pic</th>
+            <td> <input type="file" id="picture" value="uplod your pic"> </td>
+        </tr>
+        <tr>
+            <th colspan="2"><input type="submit" id="submit" name="submit" value="Sve yor data"><input type="reset" name="reset" value="reset the data" id="reset"></th>
+        </tr>
+      
+</table>
+</body>
+</html>

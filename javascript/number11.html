@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Item Adder</title>
+    <script>
+        var items = []; 
+
+        function addItem() {
+            var item = prompt("Enter an item to add:"); 
+            if (item) {
+                items.push(item); 
+                displayItems(); 
+            }
+        }
+
+        function displayItems() {
+            var itemList = "Items: " + items.join(", "); 
+            document.getElementById("result").innerHTML = itemList;
+        }
+    </script>
+</head>
+<body>
+    <h1>Array Item Adder</h1>
+    <button onclick="addItem()">Add Item</button>
+    <p id="result"></p>
+</body>
+</html>

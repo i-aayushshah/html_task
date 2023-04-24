@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="imageContainer"></div>
+
+<script>
+var imageContainer = document.getElementById("imageContainer");
+
+for (var i = 1; i <= 4; i++) {
+    var img = document.createElement("img");
+    img.src = i + ".jpg";
+    imageContainer.appendChild(img);
+}
+</script>
+
+</body>
+</html>

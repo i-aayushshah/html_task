@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+
+<table id="tableContainer">
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 4</th>
+    <th>Header 5</th>
+  </tr>
+</table>
+
+<script>
+var tableContainer = document.getElementById("tableContainer");
+
+
+for (var i = 1; i <= 5; i++) {
+    var row = document.createElement("tr");
+    for (var j = 1; j <= 5; j++) {
+        var cell = document.createElement("td");
+        cell.textContent = "Row " + i + ", Column " + j;
+        row.appendChild(cell);
+    }
+   
+    if (i % 2 === 0) {
+        row.style.backgroundColor = "#f2f2f2";
+    }
+    tableContainer.appendChild(row);
+}
+</script>
+
+</body>
+</html>

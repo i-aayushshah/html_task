@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="tableContainer"></div>
+
+<script>
+var tableContainer = document.getElementById("tableContainer");
+
+for (var i = 1; i <= 10; i++) {
+    var p = document.createElement("p");
+    p.innerHTML = "5 * " + i + " = " + (5 * i);
+    tableContainer.appendChild(p);
+}
+</script>
+
+</body>
+</html>

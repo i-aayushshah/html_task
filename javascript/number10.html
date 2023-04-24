@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rectangle Area Calculator</title>
+    <script>
+        function calculateRectangleArea() {
+            var length = parseFloat(document.getElementById("lengthInput").value);
+            var breadth = parseFloat(document.getElementById("breadthInput").value);
+
+            if (isNaN(length) || isNaN(breadth)) {
+                document.getElementById("result").innerHTML = "Error: Length and breadth should be valid numbers.";
+                return;
+            }
+
+            var area = length * breadth;
+            document.getElementById("result").innerHTML = "Area: " + area;
+        }
+    </script>
+</head>
+<body>
+    <h1>Rectangle Area Calculator</h1>
+    <label for="lengthInput">Length: </label>
+    <input type="number" id="lengthInput" /><br>
+    <label for="breadthInput">Breadth: </label>
+    <input type="number" id="breadthInput" /><br>
+    <button onclick="calculateRectangleArea()">Calculate Area</button>
+    <p id="result"></p>
+</body>
+</html>
